@@ -1,12 +1,12 @@
 import { View, Text, Image, TouchableOpacity, ScrollView, SafeAreaView, ImageBackground } from 'react-native';
 import { Ionicons, Feather, MaterialIcons } from '@expo/vector-icons';
 import styles from '../../styles/cart/Payment';
-import { TabParamList } from '../../types/route';
+import { RootStackParamList } from '../../types/route';
 import { NavigationProp, RouteProp, useNavigation, useRoute } from "@react-navigation/native";
 import { useState } from 'react';
 
 const PaymentScreen = () => {
-    const navigation = useNavigation<NavigationProp<TabParamList, "Payment">>();
+    const navigation = useNavigation<NavigationProp<RootStackParamList, "Payment">>();
     const [selected, setSelected] = useState("PayPal");
 
     return (
